@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet"> 
+    <title>Landing Page - Fauzan</title>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .profile-section {
+            display: flex;
+            background-color: #f9f7e4;
+            border-radius: 10px;
+            overflow: hidden;
+            color: white;
+            padding: 20px;
+        }
+
+        .kiri {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #275286;
+            text-align: center;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .poto-profil {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+            margin: 10px 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nama-profil {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 7px 15px;
+        }
+
+        .bio-profil {
+            font-size: 14px;
+            margin: 0;
+            color: #f0f0f0;
+        }
+
+        .medsos {
+            margin-top: 20px;
+        }
+
+        .medsos a {
+            margin: 2px 8px;
+            display: inline-block;
+            transition: transform 0.3s ease;}
+
+        .medsos img {
+            width: 30px;
+        }
+
+        .medsos a:hover {
+            transform: scale(1.18);
+        }
+
+        .medsos a:active {
+            transform: scale(0.9);
+        }
+
+        .kanan {
+            flex: 2;
+            padding: 40px;
+            color: #333333;
+            background-color: #ffffff;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .kanan h1 {
+            font-size: 32px;
+            margin-top: 0;
+        }
+        
+        .kanan p {
+            text-align: justify;
+        }
+
+        .kanan .cv-button {
+            background-color: #275286e8;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .cv-button:hover {
+            background-color: #f9f7e4;
+            color: #275286;
+            box-shadow: 0 3px 3px #aaaaaa;
+            transform: scale(1.02);
+            transition: 300ms;
+        }
+        .cv-button:active {
+        transform: scale(0.90);
+        background-color: #1b5b72;
+        box-shadow: none;
+}
+        .project {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .project h2 {
+            font-size: 28px;
+            margin-bottom: 35px;
+            color: #333333;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project-item {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .project-item h4 {
+            padding-bottom: 15px;
+        }
+
+        .project-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 5px 10px #aaaaaa;
+        }
+
+        .project-item img {
+            max-height: 180px;
+            max-width: 100%;
+            border-radius: 9px;
+        }
+
+        .project-item h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #555555;
+        }
+
+        @media (max-width: 992px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+            }
+            .kiri, .kanan {
+                border-radius: 10px;
+            }
+            .kiri {
+                padding: 20px 0;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .poto-profil, .kanan .cv-button, .project-item img {
+                width: 100%;
+                max-width: 100%;
+            }
+            .poto-profil {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="kiri">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEd0sb2dzOD5A/profile-displayphoto-shrink_200_200/B56ZZ7L804HAAc-/0/1745823453345?e=2147483647&v=beta&t=scqHKmbZGdM4-trBZxbhFsWuGPL6P5Ry-7J75hmVMAY" alt="Foto Profil" class="poto-profil">
+                <h3 class="nama-profil">Imam Mahmud Dalil Fauzan</h3>
+                <p class="bio-profil">Baik | Rajin Menabung | Tidak Mengantuk</p>
+                <div class="medsos">
+                    <a href="https://www.instagram.com/imdfauzan" aria-label="Instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/imdfauzan" aria-label="LinkedIn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/imdfauzan" aria-label="GitHub"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></a>
+                    <a href="https://line.me/ti/p/@imdfauzan" aria-label="Line"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/640px-LINE_logo.svg.png?20220419085336" alt="Line"></a>
+                </div>
+            </div>
+            <div class="kanan">
+                <h1>Halo, Aku Fauzan</h1>
+                <p>Lihat CV saya!</p>
+                <a href="/cv.html" class="cv-button">CV Kreatif</a>
+                <p>Saya adalah seorang mahasiswa Semester 3 di Departemen Teknologi Informasi Institut Teknologi Sepuluh Nopember (ITS) yang selalu bersemangat untuk belajar dan berkarya. Saya memiliki target untuk lulus dengan predikat cumlaude dan meraih pekerjaan impian di bidang teknologi.</p>
+                <p>Dalam keseharian, saya aktif mengikuti perkuliahan dan berkontribusi dalam berbagai kegiatan organisasi di kampus.</p>
+                <p>Target saya yaitu bisa lulus dari ITS ini dengan predikat cumlaude, dan saya berkomitmen untuk mencapai tujuan tersebut dengan kerja keras dan dedikasi.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Proyek Tahun 2025</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h4>Membangun Gedung Tower 1 ITS</h4>
+                    <img src="https://www.its.ac.id/pendidikan/wp-content/uploads/sites/112/2022/09/FMIPA-Statistik-02.jpg" alt="Proyek 2">
+                </div>
+                <div class="project-item">
+                    <h4>Membangun Gedung Tower 2 ITS</h4>
+                    <img src="https://www.its.ac.id/wp-content/uploads/2023/10/foto-tower-2-2.jpeg" alt="Proyek 3">
+                </div>
+                <div class="project-item">
+                    <h4>Membangun Gedung Tower 3 ITS</h4>
+                    <img src="https://www.its.ac.id/piuheti/wp-content/uploads/sites/153/2023/12/Tower-3-1024x576.jpg" alt="Proyek 4">
+                </div>
+                <div class="project-item">
+                    <h4>Membangun Gedung Research Center ITS</h4>
+                    <img src="https://cdn0-production-images-kly.akamaized.net/y_BcVwhM0LgMkLoVG_sVLdo2Eao=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2848099/original/072036100_1562648032-Kampus_ITS-OK.jpg" alt="Proyek 1">
+                </div>
+                <div class="project-item">
+                    <h4>Membangun Gedung Rektorat ITS</h4>
+                    <img src="https://www.its.ac.id/news/wp-content/uploads/sites/2/2020/12/WhatsApp-Image-2020-12-26-at-9.19.55-AM.jpeg" alt="Proyek 5">
+                </div>
+                <div class="project-item">
+                    <h4>Membangun Gedung Perpustakaan ITS</h4>
+                    <img src="https://www.its.ac.id/news/wp-content/uploads/sites/2/2017/11/Perpus_Ext-01-2-1024x683.jpg" alt="Proyek 6">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
