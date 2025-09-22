@@ -8,4 +8,4 @@ HTML dan CSS
 |---------|------|
 | Imam Mahmud Dalil Fauzan  | 5027241100  |
 | Mochammad Atha Tajuddin | 5027241093  |
-| Anggota 3 | 102  |
+| Mey Rosalina | 5027241004  |
