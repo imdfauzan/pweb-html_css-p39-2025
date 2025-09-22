@@ -7,5 +7,5 @@ HTML dan CSS
 | Nama    | NRP  |
 |---------|------|
 | Imam Mahmud Dalil Fauzan  | 5027241100  |
-| Anggota 2 | 101  |
+| Mochammad Atha Tajuddin | 5027241093  |
 | Anggota 3 | 102  |
