@@ -1,263 +1,253 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet"> 
-    <title>CV Kreatif - Fauzan</title>
-    <style>
-        body {
-            font-family: "Inter", sans-serif;
-            margin: 0;
-            background-color: #f0f2f5;
-            color: #333333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Fauzan</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    background-color: #e6f0fa;
+    color: #fff;
+}
 
-        .cv-container {
-            display: flex;
-            width: 1000px;
-            margin: 40px auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            background-color: #ffffff;
-        }
+.cv-container {
+    display: flex;
+    width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,128,0.3);
+    background: linear-gradient(135deg, #0d1f4c, #275286);
+}
 
-        .kiri {
-            width: 35%;
-            background-color: #275286;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
+.kiri {
+    width: 35%;
+    background: linear-gradient(180deg, #1b3a7a, #3b6bb5, #fff);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
 
-        .kanan {
-            width: 65%;
-            padding: 40px;
-            background-color: #ffffff;
-        }
+.kanan {
+    width: 65%;
+    padding: 40px;
+    background: rgba(0,0,50,0.7);
+}
 
-        .poto-profil {
-            width: 150px;
-            border-radius: 50%;
-            border: 3px solid white;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
+.poto-profil {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
 
-        .nama-cv {
-            font-size: 28px;
-            font-weight: bold;
-            margin: 0;
-        }
+.nama-cv {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 0 2px #ffffff, 0 0 5px #00bfff;
+}
 
-        .bio-cv {
-            font-size: 14px;
-            color: #f9f7e4;
-            margin-top: 5px;
-        }
+.bio-cv {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #e0f7ff;
+}
 
-        .kontak {
-            background-color: #3d6698;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-            text-align: left;
-        }
+.kontak {
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: left;
+    border: 1px solid #ffffff;
+}
 
-        .kontak h3 {
-            font-size: 18px;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 10px;
-            color: white;
-        }
+.kontak h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 
-        .kontak p {
-            margin: 5px 0;
-            font-size: 14px;
-            line-height: 1.5;
-        }
+.kontak p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
 
-        .medsos {
-            margin-top: 20px;
-        }
+.medsos {
+    margin-top: 20px;
+}
 
-        .medsos a {
-            margin: 0 8px;
-            text-decoration: none;
-        }
+.medsos a {
+    margin: 0 8px;
+    text-decoration: none;
+}
 
-        .medsos img {
-            width: 30px;
-        }
+.medsos img {
+    width: 28px;
+    transition: transform 0.2s, filter 0.3s, box-shadow 0.3s;
+}
 
-        .medsos :hover {
-            transform: scale(1.18);
-            transition: 200ms;
-        }
+.medsos img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #00bfff);
+}
 
-        .medsos :active {
-            transform: scale(0.85);
-        }
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #00bfff;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 3px #00bfff;
+}
 
-        h2 {
-            font-size: 24px;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-        
-        h3 {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 0 0 5px;
-        }
-        
-        .pengalaman, .pendidikan, .prestasi {
-            margin-bottom: 25px;
-        }
+.prestasi, .pengalaman, .pendidikan {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 3px solid #00bfff;
+    transition: transform 0.3s, box-shadow 0.3s, border-left-color 0.3s;
+}
 
-        .pengalaman h4, .pendidikan h4, .prestasi h4 {
-            font-size: 16px;
-            color: #555555;
-            margin: 0;
-            display: flex;
-            justify-content: space-between;
-        }
+.prestasi:hover, .pengalaman:hover, .pendidikan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,191,255,0.5);
+    border-left-color: #00ffff;
+    cursor: pointer;
+}
 
-        .pengalaman p, .pendidikan p, .prestasi p, .about-me p {
-            font-size: 14px;
-            text-align: justify;
-            margin: 5px 0;
-        }
-        
-        .about-me {
-            margin-bottom: 30px;
-        }
+.prestasi h4, .pengalaman h4, .pendidikan h4 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
-        ul {
-            padding-left: 20px;
-            margin: 10px 0 0;
-        }
+.prestasi p, .pengalaman p, .pendidikan p, .about-me p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 5px 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
 
-        ul li {
-            margin-bottom: 5px;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 768px) {
-            .cv-container {
-                flex-direction: column;
-                width: 90%;
-            }
-            .kiri, .kanan {
-                width: auto;
-                padding: 20px;
-            }
-        }
-    </style>
+.about-me {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 3px solid #00bfff;
+    transition: transform 0.3s, box-shadow 0.3s, border-left-color 0.3s;
+}
+
+.about-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,191,255,0.5);
+    border-left-color: #00ffff;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .kiri, .kanan {
+        width: auto;
+        padding: 20px;
+    }
+}
+</style>
 </head>
 <body>
 
-    <div class="cv-container">
-        <div class="kiri">
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQEd0sb2dzOD5A/profile-displayphoto-shrink_200_200/B56ZZ7L804HAAc-/0/1745823453345?e=2147483647&v=beta&t=scqHKmbZGdM4-trBZxbhFsWuGPL6P5Ry-7J75hmVMAY" alt="Foto Profil" class="poto-profil">
-            <h1 class="nama-cv">Imam Mahmud Dalil Fauzan</h1>
-            <p class="bio-cv">Baik | Rajin Menabung | Tidak Mengantuk</p>
+<div class="cv-container">
+    <div class="kiri">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQEd0sb2dzOD5A/profile-displayphoto-shrink_200_200/B56ZZ7L804HAAc-/0/1745823453345?e=2147483647&v=beta&t=scqHKmbZGdM4-trBZxbhFsWuGPL6P5Ry-7J75hmVMAY" alt="Foto Profil" class="poto-profil">
+        <h1 class="nama-cv">Imam Mahmud Dalil Fauzan</h1>
+        <p class="bio-cv">Baik | Rajin Menabung | Tidak Mengantuk</p>
 
-            <div class="kontak">
-                <h3>Kontak Saya</h3>
-                <p><b>Email:</b> 5027241100@student.its.ac.id</p>
-                <p><b>Telepon:</b> 0822-1000-6306</p>
-                <p><b>Alamat:</b> Surabaya, Jawa Timur, Indonesia</p>
-            </div>
-            
-            <div class="medsos">
-                <a href="https://www.instagram.com/imdfauzan" aria-label="Instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/imdfauzan" aria-label="LinkedIn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
-                <a href="https://github.com/imdfauzan" aria-label="GitHub"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></a>
-                <a href="https://line.me/ti/p/@imdfauzan" aria-label="Line"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/640px-LINE_logo.svg.png?20220419085336" alt="Line"></a>
-            </div>
+        <div class="kontak">
+            <h3>Kontak</h3>
+            <p><b>Email:</b> 5027241100@student.its.ac.id</p>
+            <p><b>Telepon:</b> 0822-1000-6306</p>
+            <p><b>Alamat:</b> Surabaya, Jawa Timur, Indonesia</p>
         </div>
 
-        <div class="kanan">
-            <div class="about-me">
-                <h2>Deskripsi Saya</h2>
-                <p>
-                    Mahasiswa Departemen Teknologi Informasi ITS yang fokus pada pengembangan solusi teknologi. Memiliki minat yang kuat dalam merancang, membangun, dan mengelola proyek-proyek inovatif. Terampil dalam menyelesaikan masalah teknis dan kolaborasi tim.
-                </p>
-            </div>
-
-            
-            <h2>Prestasi</h2>
-            <div class="prestasi">
-                <h4>
-                    <span>Penerima Beasiswa Dicoding Asah</span>
-                    <span>Agustus 2025 - Sekarang</span>
-                </h4>
-                <p>Front-End & Back-End Developer</p>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>Javascript.</li>
-                </ul>
-            </div>
-            <h2>Pengalaman</h2>
-            <div class="pengalaman">
-                <h4>
-                    <span>UKM Fotografi ITS</span>
-                    <span>Maret 2025 - Sekarang</span>
-                </h4>
-                <p>Staff External Affairs</p>
-                <ul>
-                    <li>Mengadakan studi banding dengan UKM Fotografi di berbagai kampus.</li>
-                    <li>Menjalin hubungan dengan UKM Fotografi di kampus lain.</li>
-                </ul>
-            </div>
-            
-            <div class="pengalaman">
-                <h4>
-                    <span>UKM Islamic Qur'anic Society (IQS) ITS</span>
-                    <span>Maret 2025 - Sekarang</span>
-                </h4>
-                <p>Staff Hubungan Luar</p>
-                <ul>
-                    <li>Menjalin Relasi dengan UKM sejenis di berbagai kampus.</li>
-                    <li>Mengadakan studi banding dengan UKM sejenis dengan kampus lain.</li>
-                </ul>
-            </div>
-
-            <div class="pengalaman">
-                <h4>
-                    <span>ARA 6.0 by Teknologi Informasi ITS</span>
-                    <span>Oktober 2024 - Mei 2025</span>
-                </h4>
-                <p>Staff Roadshow</p>
-                <ul>
-                    <li>Mengadakan event Roadshow di SMA sekitar ITS.</li>
-                    <li>Menyebarkan undangan terkait ARA 6.0 ke SMA terpilih.</li>
-                </ul>
-            </div>
-
-            <h2>Pendidikan</h2>
-            <div class="pendidikan">
-                <h4>
-                    <span>Institut Teknologi Sepuluh Nopember (ITS)</span>
-                    <span>2024 - Sekarang</span>
-                </h4>
-                <p>Surabaya, Jawa Timur</p>
-            </div>
-            <div class="pendidikan">
-                <h4>
-                    <span>SMA Al-Izzah</span>
-                    <span>2021 - 2024</span>
-                </h4>
-                <p>Batu, Jawa Timur</p>
-            </div>
+        <div class="medsos">
+            <a href="https://www.instagram.com/imdfauzan"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/imdfauzan"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+            <a href="https://github.com/imdfauzan"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></a>
+            <a href="https://line.me/ti/p/@imdfauzan"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/640px-LINE_logo.svg.png" alt="Line"></a>
+        </div>
     </div>
+
+    <div class="kanan">
+        <div class="about-me">
+            <h2>Deskripsi Saya</h2>
+            <p>
+                Mahasiswa Departemen Teknologi Informasi ITS yang fokus pada pengembangan solusi teknologi. Memiliki minat yang kuat dalam merancang, membangun, dan mengelola proyek-proyek inovatif. Terampil dalam menyelesaikan masalah teknis dan kolaborasi tim.
+            </p>
+        </div>
+
+        <h2>Prestasi</h2>
+        <div class="prestasi">
+            <h4><span>Penerima Beasiswa Dicoding Asah</span><span>Agustus 2025 - Sekarang</span></h4>
+            <p>Front-End & Back-End Developer</p>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+
+        <h2>Pengalaman</h2>
+        <div class="pengalaman">
+            <h4><span>UKM Fotografi ITS</span><span>Maret 2025 - Sekarang</span></h4>
+            <p>Staff External Affairs</p>
+            <ul>
+                <li>Mengadakan studi banding dengan UKM Fotografi di berbagai kampus.</li>
+                <li>Menjalin hubungan dengan UKM Fotografi di kampus lain.</li>
+            </ul>
+        </div>
+
+        <div class="pengalaman">
+            <h4><span>UKM Islamic Qur'anic Society (IQS) ITS</span><span>Maret 2025 - Sekarang</span></h4>
+            <p>Staff Hubungan Luar</p>
+            <ul>
+                <li>Menjalin Relasi dengan UKM sejenis di berbagai kampus.</li>
+                <li>Mengadakan studi banding dengan UKM sejenis di kampus lain.</li>
+            </ul>
+        </div>
+
+        <div class="pengalaman">
+            <h4><span>ARA 6.0 by Teknologi Informasi ITS</span><span>Oktober 2024 - Mei 2025</span></h4>
+            <p>Staff Roadshow</p>
+            <ul>
+                <li>Mengadakan event Roadshow di SMA sekitar ITS.</li>
+                <li>Menyebarkan undangan terkait ARA 6.0 ke SMA terpilih.</li>
+            </ul>
+        </div>
+
+        <h2>Pendidikan</h2>
+        <div class="pendidikan">
+            <h4><span>Institut Teknologi Sepuluh Nopember (ITS)</span><span>2024 - Sekarang</span></h4>
+            <p>Surabaya, Jawa Timur</p>
+        </div>
+        <div class="pendidikan">
+            <h4><span>SMA Al-Izzah</span><span>2021 - 2024</span></h4>
+            <p>Batu, Jawa Timur</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
